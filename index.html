@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>what does your name say about your personality</h1>
+        <div class="inner-content">
+            <div class="details">
+                <h3>Enter your Name</h3>
+                <input type="text" name="Name" id="name">
+                         
+            </div>
+            <div class="image">
+                <img src="img.png" width="200" height="200">
+            </div>
+            
+            <button id="btn">Click Me</button>
+        </div>
+    </header>
+
+    <script>
+        const name=document.getElementById('name');
+        const img=document.querySelector('img');
+        const btn=document.getElementById('btn');
+        btn.addEventListener('click',()=>{
+           
+            
+            // console.log(name.value);
+            img.src=`https://joeschmoe.io/api/v1/${name.value}`;
+            // img.src=`wow.jpg`;
+            // img.src.replace('img.png',`https://joeschmoe.io/api/v1/${name}`);
+            // img.classList.replace();
+        });
+        
+
+    </script>
+
+
+</body>
+
+</html>
